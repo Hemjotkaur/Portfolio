@@ -38,34 +38,30 @@ const Skills = () => {
     },
     {
       id: 4,
-      icon: <SiTypescript className="text-7xl text-white" />,
-    },
-    {
-      id: 5,
       icon: <FaReact className="text-7xl text-white" />,
     },
     {
-      id: 6,
+      id: 5,
       icon: <SiNextdotjs className="text-7xl text-white" />,
     },
     {
-      id: 7,
+      id: 6,
       icon: <RiTailwindCssFill className="text-7xl text-white" />,
     },
     {
-      id: 8,
+      id: 7,
       icon: <FaNodeJs className="text-7xl text-white" />,
     },
     {
-      id: 9,
+      id: 8,
       icon: <SiExpress className="text-7xl text-white" />,
     },
     {
-      id: 10,
+      id: 9,
       icon: <SiMongodb className="text-7xl text-white" />,
     },
     {
-      id: 11,
+      id: 10,
       icon: <FaGitAlt className="text-7xl text-white" />,
     },
   ];
