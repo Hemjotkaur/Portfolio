@@ -1,103 +1,177 @@
-import React from 'react'
+import React from "react";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+} from "react-icons/fa";
 
-import html from "../assets/html.png"
-import css from "../assets/css.png"
-import javascript from "../assets/javascript.png"
-import c from "../assets/c++.png"
-import reactimage from "../assets/react.png"
-import tailwind from "../assets/tailwind.png"
-import vite from "../assets/vite.png"
-import streamlit from "../assets/streamlit.png"
-import github from "../assets/github.png"
-import vercel from "../assets/Vercel.png"
+import { IoLogoJavascript } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
 
-const Experience = () => {
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiMongodb,
+  SiExpress,
+  SiGithub,
+  SiPostman,
+  SiVercel,
+} from "react-icons/si";
 
-    const tech = [
-        {
-            id:1,
-            src:html,
-            title:'HTML',
-            style: 'shadow-orange-500'
-        },
-        {
-            id:2,
-            src:css,
-            title:'CSS',
-            style: 'shadow-blue-500'
-        },
-        {
-            id:3,
-            src:javascript,
-            title:'JavaScript',
-            style: 'shadow-yellow-500'
-        },
-        {
-            id:4,
-            src:c,
-            title:'C++',
-            style: 'shadow-blue-300'
-        },
-        {
-            id:5,
-            src:reactimage,
-            title:'React',
-            style: 'shadow-blue-600'
-        },
-        {
-            id:6,
-            src:tailwind ,
-            title:'Tailwind',
-            style: 'shadow-sky-400'
-        },
-        {
-            id:7,
-            src:vite,
-            title:'VITE',
-            style: 'shadow-purple-500'
-        },
-        {
-            id:8,
-            src: github,
-            title:'Github',
-            style: 'shadow-gray-400'
-        },
-        {
-            id:9,
-            src: vercel,
-            title:'Vercel',
-            style: 'shadow-gray-400'
-        },
-       
-    ]
+import { VscVscode } from "react-icons/vsc";
 
+const Skills = () => {
+  const skills = [
+    {
+      id: 1,
+      icon: <FaHtml5 className="text-7xl text-white" />,
+    },
+    {
+      id: 2,
+      icon: <FaCss3Alt className="text-7xl text-white" />,
+    },
+    {
+      id: 3,
+      icon: <IoLogoJavascript className="text-7xl text-white" />,
+    },
+    {
+      id: 4,
+      icon: <SiTypescript className="text-7xl text-white" />,
+    },
+    {
+      id: 5,
+      icon: <FaReact className="text-7xl text-white" />,
+    },
+    {
+      id: 6,
+      icon: <SiNextdotjs className="text-7xl text-white" />,
+    },
+    {
+      id: 7,
+      icon: <RiTailwindCssFill className="text-7xl text-white" />,
+    },
+    {
+      id: 8,
+      icon: <FaNodeJs className="text-7xl text-white" />,
+    },
+    {
+      id: 9,
+      icon: <SiExpress className="text-7xl text-white" />,
+    },
+    {
+      id: 10,
+      icon: <SiMongodb className="text-7xl text-white" />,
+    },
+    {
+      id: 11,
+      icon: <FaGitAlt className="text-7xl text-white" />,
+    },
+  ];
+
+  const tools = [
+    {
+      id: 1,
+      icon: <VscVscode className="text-7xl text-white" />,
+    },
+    {
+      id: 2,
+      icon: <SiPostman className="text-7xl text-white" />,
+    },
+    {
+      id: 3,
+      icon: <SiGithub className="text-7xl text-white" />,
+    },
+    {
+      id: 4,
+      icon: <SiVercel className="text-7xl text-white" />,
+    },
+  ];
 
   return (
-    <div name='My Skills' className='bg-black w-full h-screen pt-20'>
-      <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white'>
-        <div>
-            <p className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline  '>| My skills |</p>
-            {/* <p className='py-6'>These are the technologies I've worked with</p> */}
+    <div className="w-full min-h-screen pt-24 py-20">
+      <div className="max-w-7xl mx-auto px-6 text-white">
+        {/* Heading */}
+        <div className="mb-14">
+          <h2 className="text-5xl font-bold text-center">
+            Professional{" "}
+            <span className="text-violet-400">Skillset</span>
+          </h2>
         </div>
 
-        <div className='w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-11 px-12 sm:px-0'> 
-           
-           {
-             tech.map(({id,src,title,style}) =>(
-                <div 
-                    key={id}
-                    className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg  ${style}`}>
-                <img  src={src} alt='' className='w-15 mx-auto animate-bounce'/>
-                <p className='mt-4'>{title}</p>
-                </div>
+        {/* Skills */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          {skills.map(({ id, icon, title }) => (
+            <div
+              key={id}
+              className="
+                h-44
+                rounded-lg
+                border
+                border-violet-500/70
+                bg-[#0a061a]/60
+                backdrop-blur-sm
+                flex
+                flex-col
+                items-center
+                justify-center
+                gap-5
+                transition-all
+                duration-300
+                hover:scale-105
+                hover:border-violet-400
+                hover:shadow-[0_0_25px_rgba(168,85,247,0.35)]
+              "
+            >
+              {icon}
+              <p className="text-lg font-medium text-gray-200">
+                {title}
+              </p>
+            </div>
+          ))}
+        </div>
 
-             ))}
-           
-           
+        {/* Tools Row */}
+         <div className="mb-14">
+          <h2 className="text-5xl font-bold text-center">
+            Tools
+            <span className="text-violet-400">I Use</span>
+          </h2>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 ">
+          {tools.map(({ id, icon, title }) => (
+            <div
+              key={id}
+              className="
+                h-44
+                rounded-lg
+                border
+                border-violet-500/70
+                bg-[#0a061a]/60
+                backdrop-blur-sm
+                flex
+                flex-col
+                items-center
+                justify-center
+                gap-5
+                transition-all
+                duration-300
+                hover:scale-105
+                hover:border-violet-400
+                hover:shadow-[0_0_25px_rgba(168,85,247,0.35)]
+              "
+            >
+              {icon}
+              <p className="text-lg font-medium text-gray-200">
+                {title}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Experience
+export default Skills;
