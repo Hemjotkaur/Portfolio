@@ -1,6 +1,6 @@
 import React from "react";
 import quickstay from "../assets/quickstay.png";
-import portfolioimage from "../assets/portfolio.png";
+import portfolioimage from "../assets/portfolio1.png";
 import { FaGithub } from "react-icons/fa";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 
@@ -22,8 +22,8 @@ const Projects = () => {
       title: "Portfolio Website",
       description:
         "Designed and developed a personal portfolio website to showcase my projects, skills, and experience.",
-      href: "https://hk-portfolio-gamma.vercel.app/",
-      link: "https://github.com/Hemjotkaur/HK-s-Portfolio",
+      href: "https://hemjot-portfolio.vercel.app/",
+      link: "https://github.com/Hemjotkaur/Portfolio",
     },
   ];
 
