@@ -51,7 +51,7 @@ const About = () => {
 
         <div className="flex items-center gap-8">
           <a
-            href="https://https://github.com/Hemjotkaur.com/"
+            href="https://github.com/Hemjotkaur"
             target="_blank"
             rel="noopener noreferrer"
             className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-violet-700 text-3xl hover:-translate-y-1 transition-all duration-300"
