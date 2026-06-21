@@ -21,7 +21,7 @@ const Projects = () => {
       src: portfolioimage,
       title: "Portfolio Website",
       description:
-        "Designed and developed a personal portfolio website to showcase my projects, skills, and experience.",
+        "Designed and developed a personal portfolio website to showcase my projects, skills, and experience.Implemented interactive animations, smooth navigation, and dynamic components to create an engaging user experience.",
       href: "https://hemjot-portfolio.vercel.app/",
       link: "https://github.com/Hemjotkaur/Portfolio",
     },
