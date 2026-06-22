@@ -1,4 +1,3 @@
-import React from "react";
 import quickstay from "../assets/quickstay.png";
 import portfolioimage from "../assets/portfolio1.png";
 import { FaGithub } from "react-icons/fa";
@@ -19,7 +18,7 @@ const Projects = () => {
     {
       id: 2,
       src: portfolioimage,
-      title: "Portfolio Website",
+      title: "Portfolio",
       description:
         "Designed and developed a personal portfolio website to showcase my projects, skills, and experience.Implemented interactive animations, smooth navigation, and dynamic components to create an engaging user experience.",
       href: "https://hemjot-portfolio.vercel.app/",
@@ -35,7 +34,7 @@ const Projects = () => {
             My Recent <span className="text-purple-500">Works</span>
           </p>
           <p className="py-2 text-gray-300">
-            Here are a few projects I've worked on recently.
+            Here are a few projects I have worked on recently.
           </p>
         </div>
 

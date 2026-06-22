@@ -1,5 +1,4 @@
 // components/Footer.jsx
-import React from "react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
